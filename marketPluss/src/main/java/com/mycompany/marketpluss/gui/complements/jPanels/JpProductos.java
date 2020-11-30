@@ -7,8 +7,10 @@ package com.mycompany.marketpluss.gui.complements.jPanels;
 
 import com.mycompany.marketpluss.gui.complements.jDialogs.JdNewProduct;
 import com.mycompany.marketpluss.gui.main.MarketPluss;
+import com.mycompany.marketpluss.gui.tablesModel.Productos_table_model;
 import java.awt.Frame;
 import java.awt.Window;
+import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 
 /**
@@ -16,13 +18,14 @@ import javax.swing.SwingUtilities;
  * @author Sammy Guergachi <sguergachi at gmail.com>
  */
 public class JpProductos extends javax.swing.JPanel {
-
-    /**
-     * Creates new form JpProductos
-     */
+    
+    private Productos_table_model productos_table_model;
+    
     public JpProductos() {
         initComponents();
-        
+        jTable1.getSelectionModel().setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        productos_table_model = new Productos_table_model();
+        paintTable(productos_table_model);
     }
 
     /**
@@ -187,6 +190,8 @@ public class JpProductos extends javax.swing.JPanel {
 
         jScrollPane1.setBorder(null);
 
+        jTable1.setBackground(new java.awt.Color(255, 255, 255));
+        jTable1.setForeground(new java.awt.Color(51, 51, 51));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -198,6 +203,10 @@ public class JpProductos extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        jTable1.setFocusable(false);
+        jTable1.setRowHeight(30);
+        jTable1.setRowMargin(0);
+        jTable1.setSelectionBackground(new java.awt.Color(30, 136, 229));
         jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -219,7 +228,11 @@ public class JpProductos extends javax.swing.JPanel {
 
         add(jpMain, "card2");
     }// </editor-fold>//GEN-END:initComponents
-
+    private void paintTable(Productos_table_model tableModel) {
+        this.productos_table_model = tableModel;
+        jTable1.setModel(tableModel);
+        jTable1.getColumnModel().getColumn(0).setMaxWidth(35);
+    }
     private void buttonClass1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClass1ActionPerformed
         JpProductos jpProducts = new JpProductos();
         Window parentWindow = SwingUtilities.windowForComponent(jpProducts); 

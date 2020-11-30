@@ -44,7 +44,7 @@ public class Producto {
         this.precio_sub_total = precio_sub_total;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -52,7 +52,7 @@ public class Producto {
         this.status = status;
     }
 
-    public boolean isIgv() {
+    public boolean getIgv() {
         return igv;
     }
 
