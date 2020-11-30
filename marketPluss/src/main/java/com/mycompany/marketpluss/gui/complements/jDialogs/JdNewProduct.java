@@ -39,8 +39,6 @@ public class JdNewProduct extends javax.swing.JDialog {
         jsCardMainS2 = new javax.swing.JSeparator();
         jsCardMainS3 = new javax.swing.JSeparator();
         jsCardMainS4 = new javax.swing.JSeparator();
-        buttonClass1 = new styles.ButtonClass();
-        buttonClass2 = new styles.ButtonClass();
 
         setResizable(false);
 
@@ -106,47 +104,28 @@ public class JdNewProduct extends javax.swing.JDialog {
 
         jsCardMainS4.setPreferredSize(new java.awt.Dimension(0, 7));
 
-        buttonClass1.setBackground(new java.awt.Color(244, 67, 54));
-        buttonClass1.setText("Cancelar");
-        buttonClass1.setColorHover(new java.awt.Color(228, 62, 50));
-        buttonClass1.setColorNormal(new java.awt.Color(244, 67, 54));
-        buttonClass1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-
-        buttonClass2.setBackground(new java.awt.Color(30, 136, 229));
-        buttonClass2.setText("Aceptar");
-        buttonClass2.setColorHover(new java.awt.Color(27, 125, 210));
-        buttonClass2.setColorNormal(new java.awt.Color(30, 136, 229));
-        buttonClass2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-
         javax.swing.GroupLayout jpCardMainLayout = new javax.swing.GroupLayout(jpCardMain);
         jpCardMain.setLayout(jpCardMainLayout);
         jpCardMainLayout.setHorizontalGroup(
             jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpCardMainLayout.createSequentialGroup()
-                .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGap(37, 37, 37)
+                .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jsCardMainS2)
+                    .addComponent(jtfCardMainProduct)
+                    .addComponent(jtfCardMainDescription)
+                    .addComponent(jsCardMainS1)
                     .addGroup(jpCardMainLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(buttonClass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(buttonClass2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpCardMainLayout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                        .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtfCardMainPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtfCardMainStock, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jsCardMainS4, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jsCardMainS3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(168, 168, 168)
                         .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jsCardMainS2)
-                            .addComponent(jtfCardMainProduct)
-                            .addComponent(jtfCardMainDescription)
-                            .addComponent(jsCardMainS1)
-                            .addGroup(jpCardMainLayout.createSequentialGroup()
-                                .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jtfCardMainPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jtfCardMainStock, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jsCardMainS4, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jsCardMainS3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(168, 168, 168)
-                                .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jcbCardMainStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jcbCardMainIgv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(102, 102, 102)))))
+                            .addComponent(jcbCardMainStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jcbCardMainIgv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(102, 102, 102)))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         jpCardMainLayout.setVerticalGroup(
@@ -174,11 +153,7 @@ public class JdNewProduct extends javax.swing.JDialog {
                         .addComponent(jtfCardMainStock, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(jsCardMainS4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
-                .addGroup(jpCardMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonClass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonClass2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jpCardChangeLayout = new javax.swing.GroupLayout(jpCardChange);
@@ -257,8 +232,6 @@ public class JdNewProduct extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private styles.ButtonClass buttonClass1;
-    private styles.ButtonClass buttonClass2;
     private javax.swing.JCheckBox jcbCardMainIgv;
     private javax.swing.JCheckBox jcbCardMainStatus;
     private javax.swing.JLabel jlCardBarRename;

@@ -10,10 +10,10 @@ public class MarketPluss extends javax.swing.JFrame {
     public MarketPluss() {
         initComponents();
         this.setLocationRelativeTo(null);
-        if (btnHogar.isFocusPainted()) {
+        /*if (btnHogar.isFocusPainted()) {
             btnHogar.setColorHover(new Color(21,101,192));
             btnHogar.setColorNormal(new Color(21,101,192));
-        }
+        }*/
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,20 +26,12 @@ public class MarketPluss extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        buttonClass8 = new styles.ButtonClass();
         jPanel15 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btnHogar = new styles.ButtonClass();
-        btnProductos = new styles.ButtonClass();
-        btnCategorias = new styles.ButtonClass();
-        btnVentas = new styles.ButtonClass();
-        btnCompras = new styles.ButtonClass();
-        btnClientes = new styles.ButtonClass();
-        btnProveedores = new styles.ButtonClass();
         jpMainmi = new javax.swing.JPanel();
         jpMain = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
@@ -74,16 +66,6 @@ public class MarketPluss extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(13, 71, 161));
 
-        buttonClass8.setBackground(new java.awt.Color(13, 71, 161));
-        buttonClass8.setText("CERRAR");
-        buttonClass8.setColorHover(new java.awt.Color(12, 67, 152));
-        buttonClass8.setColorNormal(new java.awt.Color(13, 71, 161));
-        buttonClass8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonClass8ActionPerformed(evt);
-            }
-        });
-
         jPanel15.setBackground(new java.awt.Color(13, 71, 161));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
@@ -111,14 +93,13 @@ public class MarketPluss extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(buttonClass8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addGap(82, 82, 82))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(buttonClass8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_START);
@@ -139,70 +120,6 @@ public class MarketPluss extends javax.swing.JFrame {
 
         jPanel5.add(jPanel6);
 
-        btnHogar.setBackground(new java.awt.Color(25, 118, 210));
-        btnHogar.setText("Hogar");
-        btnHogar.setColorHover(new java.awt.Color(21, 101, 192));
-        btnHogar.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnHogar.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        btnHogar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHogarActionPerformed(evt);
-            }
-        });
-        jPanel5.add(btnHogar);
-
-        btnProductos.setBackground(new java.awt.Color(25, 118, 210));
-        btnProductos.setText("Productos");
-        btnProductos.setColorHover(new java.awt.Color(21, 101, 192));
-        btnProductos.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnProductos.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        btnProductos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProductosActionPerformed(evt);
-            }
-        });
-        jPanel5.add(btnProductos);
-
-        btnCategorias.setBackground(new java.awt.Color(25, 118, 210));
-        btnCategorias.setText("Categorias");
-        btnCategorias.setColorHover(new java.awt.Color(21, 101, 192));
-        btnCategorias.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnCategorias.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        jPanel5.add(btnCategorias);
-
-        btnVentas.setBackground(new java.awt.Color(25, 118, 210));
-        btnVentas.setText("Ventas");
-        btnVentas.setColorHover(new java.awt.Color(21, 101, 192));
-        btnVentas.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnVentas.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        btnVentas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVentasActionPerformed(evt);
-            }
-        });
-        jPanel5.add(btnVentas);
-
-        btnCompras.setBackground(new java.awt.Color(25, 118, 210));
-        btnCompras.setText("Compras");
-        btnCompras.setColorHover(new java.awt.Color(21, 101, 192));
-        btnCompras.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnCompras.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        jPanel5.add(btnCompras);
-
-        btnClientes.setBackground(new java.awt.Color(25, 118, 210));
-        btnClientes.setText("Clientes");
-        btnClientes.setColorHover(new java.awt.Color(21, 101, 192));
-        btnClientes.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnClientes.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        jPanel5.add(btnClientes);
-
-        btnProveedores.setBackground(new java.awt.Color(25, 118, 210));
-        btnProveedores.setText("Proveedores");
-        btnProveedores.setColorHover(new java.awt.Color(21, 101, 192));
-        btnProveedores.setColorNormal(new java.awt.Color(25, 118, 210));
-        btnProveedores.setFont(new java.awt.Font("Fira Code Medium", 0, 14)); // NOI18N
-        jPanel5.add(btnProveedores);
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -211,7 +128,7 @@ public class MarketPluss extends javax.swing.JFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 456, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
 
         jPanel1.add(jPanel3, java.awt.BorderLayout.LINE_START);
@@ -450,14 +367,6 @@ public class MarketPluss extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private styles.ButtonClass btnCategorias;
-    private styles.ButtonClass btnClientes;
-    private styles.ButtonClass btnCompras;
-    private styles.ButtonClass btnHogar;
-    private styles.ButtonClass btnProductos;
-    private styles.ButtonClass btnProveedores;
-    private styles.ButtonClass btnVentas;
-    private styles.ButtonClass buttonClass8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

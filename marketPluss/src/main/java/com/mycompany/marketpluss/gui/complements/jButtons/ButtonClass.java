@@ -1,5 +1,5 @@
 
-package styles;
+package com.mycompany.marketpluss.gui.complements.jButtons;
 
 import java.awt.Color;
 import java.awt.Cursor;

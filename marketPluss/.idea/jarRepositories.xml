@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="project-lib" />
+      <option name="name" value="project-lib" />
+      <option name="url" value="file://D:\Git\proyecto-ESJJ\marketPluss/src/main/resources/lib" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="unknown-jars-temp-repo" />
+      <option name="name" value="A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository." />
+      <option name="url" value="file://D:\Git\proyecto-ESJJ\marketPluss/lib" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
