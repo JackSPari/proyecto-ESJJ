@@ -14,14 +14,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import util.ErrorLogger;
+import market.company.poo.util.ErrorLogger;
 import java.util.logging.Level;
 
-/**
- *
- * @author Jack
- */
-public class ClienteData {
+
+public class Cliente_data {
 
     static Connection cn = Conn.connectSQLite();
     static PreparedStatement ps;
