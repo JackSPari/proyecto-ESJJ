@@ -21,7 +21,7 @@ public class Categoria_data {
     public static int create(Categoria c) {
         int rsId = 0;
         String[] returns = {"id"};
-        String sql = "INSERT INTO producto(nombre_categoria) "
+        String sql = "INSERT INTO categoria(nombre_categoria) "
                 + "VALUES(?)";
         int i = 0;
         try {
